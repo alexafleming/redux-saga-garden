@@ -41,7 +41,12 @@ function PlantList() {
     return (
         <div>
             <h3>This is the plant list</h3>
-            <pre>{JSON.stringify(plants)}</pre>
+            {/* <pre>{JSON.stringify(plants)}</pre> */}
+            <ul>
+             {plants.map((plant, id) => (
+                <li key={id}>{plant.name}</li>
+            ))}
+            </ul>
         </div>
     );
 }
