@@ -5,7 +5,7 @@ const NewPlantForm = () => {
     const dispatch = useDispatch();
     
     //Initial state is an OBJECT, with keys id and name
-    let [newPlant, setPlant] = useState({id: 4, name: ''});
+    let [newPlant, setPlant] = useState([{id: 4, name: ''}]);
 
     const handleNameChange = (event) => {
         console.log('event happened');
